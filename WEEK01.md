@@ -1,4 +1,4 @@
-5월 18일 일
+#### 5월 18일 (일)
 
 파이썬 가상환경
 프로젝트마다 독립된 python 환경과 패키지를 갖도록 하는 폴더 기반의 격리 시스템.
@@ -45,5 +45,71 @@ deactivate
 - amdahl의 법칙
 
 
+#### 5월 19일 (월)
 
+공부 키워드
+- 배열, 문자열
+  - 2-2, 1-1, 1-1, 2, 1-4
+  - 파이썬에서 배열을 리스트와 튜플로 구현할 수 있다. 리스트와 튜플은 컨테이너라고 하며 비슷한 기능을 하는듯하지만 원소를 변경할 수 있는지 없는지에 따라 차이가 있다.
+  - 리스트는 뮤터블 리스트형 객체
+  - call by ref / call by val / call by obj-ref
+  - 튜플은 이뮤터블 자료형
+  - 인덱스로 원소에 접근하기
+  - 슬라이스식으로 원소에 접근하기
 
+- 반복문과 재귀함수
+  -
+- 복잡도(BigO, 시간, 공간)
+
+- 정렬
+   - 정렬 알고리즘
+      - 정렬 안정성 / 외부, 내부 정렬
+   - 버블 정렬
+   - 단순 선택 정렬
+   - 단순 삽입 정렬
+   - 셸 정렬
+   - 퀵 정렬
+   - 힙 정렬
+   - 도수 정렬
+- 완전탐색
+- 정수론
+
+#### CS 기초
+- 32 Bit / 64 Bit 차이
+  - 컴퓨터 프로세서(CPU)가 데이터를 처리하는 방식
+  - Bit는 CPU가 처리하는 데이터의 최소 단위인 레지스터의 크기가 몇 비트인지를 의미한다.
+  - [64-bit windows 언제 그리고 왜 써야 할까](https://learn.microsoft.com/ko-kr/previous-versions/cc700734(v=technet.10)?redirectedfrom=MSDN)
+- Python Call by value, Call by reference
+  - 함수 호출 시 함수의 인자 전달 방식
+  - 파이썬은 Call by object-reference 호출 방식을 사용
+  - 파이썬에는 2가지의 자료형이 존재 immutable / mutable
+- 실수 표현법(부동 소수점, 고정 소수점)
+  - 컴퓨터에서 실수를 근삿값으로 표현할 때 사용.
+  - 부동 소수점 방식은 실수를 가수와 지수 부분으로 나누어 표현하는것을 의미함
+  - 가수 : 유효 숫자 범위 / 지수 : 소수점의 위치
+  - 2의 보수, 1의 보수
+  - 컴퓨터가 덧셈을 하는 방법
+
+- C에서 Pointer 및 배열
+- Garbage Collect
+- Stack과 Heap, 메모리 구조
+- jpg, png, gif 각각의 차이
+- 2's complement, 1's complement
+  - 컴퓨터가 연산을 하는 방법
+- CPU vs GPU
+- SSD, HDD
+
+#### Algorithm 및 Data structure
+- 시간 복잡도
+   - 컴퓨터 프로그램의 입력값과 연산 수행 시간의 상관관계
+- Recursion, Iteration
+- Linked List, Array, Stack, Queue
+- Deep Copy vs Shallow Copy
+- 정렬, QuickSort, MergeSort, HeapSort
+  - 정렬 안정도, 분할 정복 방식
+  -
+- Hash Table (collision, chaining, rehashing)
+- DFS, BFS
+- Graph, Tree
+- Dynamic Programming, Greedy Algorithm
+- 균형 이진 트리(Balanced BST) ex. AVL, RBTree
