@@ -285,3 +285,34 @@ product = reduce(lambda x,y : x*y, [1,2,3,4])
 반복문과 재귀함수의 차이점
 - 반복문은 스택 프레임을 계속 만들지 않음(한 함수 프레임 안에서 루프 실행)
 - 재귀는 호출마다 새로운 스택 프레임이 생김 > 메모리 부담이 더 큼(재귀함수의 단점은 스택오버플로우의 위험성)
+
+<Recursion>
+To understand recursion, one must first understand recursion
+
+primitive: 원시값
+
+means of combinations: by which compound elements are built from simpler ones, and
+
+means of abstraction, by which compound elements can be named and manipulated as units.
+
+applicative order - python
+
+normal order evaluation
+
+recurcion 구현 - base condition - faith
+
+Tail recursion : return문에서 연산이 없는 경우, 자기 자신만을 부르는 경우
+
+설명 순서대로 함수를 작성하면 된다.
+실행 순서를 따라갈 줄은 알아야 한다. > application order와 normal order evaluation
+
+알고리즘, 컴퓨터 역사책(~ing)
+
+컴퓨터에게 일을 시킨 목록, 풀려고 한 문제들의 집합
+문제를 풀려고 노력했던 과거의 사람들의 존재
+
+재귀의 조건
+1. 작은 부분으로 쪼개지는 가
+2. 기저조건: 부메랑
+3. 하위 문제 호출
+4. 결과 조합 : 조합이 없으면 꼬리재귀
