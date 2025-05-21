@@ -224,3 +224,64 @@ branch 전략
 
 - 정수론
     - 정수론이란..
+
+#### 0521
+
+- 파이썬 set 자료형
+``` python
+# set 생성
+  my_set = set()
+# 값 삭제
+  my_set.remove(1) # 인자로 넘기는 값이 없으면 오류 발생
+# discard 메서드를 사용하면 값이 세트에 없어도 오류 발생하지 않음
+  my_set.discard(1)
+# 값 존재 여부 확인
+  'S' in my_set
+# 모든값 제거
+  my_set.clear()
+```
+
+- 파이썬 정렬
+```python
+mylist.sort() => 리스트형의 메서드, 리스트의 원본값을 직접 수정
+sorted(mylist) => 내장 함수. 리스트의 원본값은 그대로. 정렬값은 반환
+```
+key와 lambda
+- key와 lambda는 다른 개념이지만, lambda는 종종 key 값으로 사용된다.
+- key에 내장 함수를 넣을 수 있음(abs, str.lower, len 등)
+- lambda는 익명함수를 만들기 위한 간결한 문법
+```
+  lambda 매개변수 : 변수
+```
+- def로 만든 함수처럼 작동하지만, 간단히 함수를 만들 수 있음
+- return문을 사용하지 않고 값을 반환함
+```
+add = lambda x, y : x + y
+위와 동일함
+add(x, y)
+```
+- key 함수로 사용
+```
+words = ["banana", "apple", "cherry"]
+sorted(words, key=lambda x: len(x))
+```
+- map과 함께 사용
+```
+numbers = [1,2,3,4,5]
+evens = list(map(lambda x: x ** 2, numbers))
+```
+- filter와 함께 사용
+```
+numbers = [1,2,3,4,5]
+evens = list(filter(lambda x: x % 2 == 0, numbers))
+```
+- reduce와 함께 사용
+```
+from functools import reduce
+product = reduce(lambda x,y : x*y, [1,2,3,4])
+```
+
+
+반복문과 재귀함수의 차이점
+- 반복문은 스택 프레임을 계속 만들지 않음(한 함수 프레임 안에서 루프 실행)
+- 재귀는 호출마다 새로운 스택 프레임이 생김 > 메모리 부담이 더 큼(재귀함수의 단점은 스택오버플로우의 위험성)
