@@ -25,13 +25,56 @@
       - Opcode(연산 코드) -> 무슨 연산을 할지
       - Operand(피연산자) -> 어디에, 무엇에 대해 연산할지 지정
 
-  - 오퍼랜드의 표현방식(주소 지정 모드)
-    1. 레지스터 오퍼랜드
-      ```
-        MOV rax, rbx
-      ```
+  - DFS/BFS
+    - 그래프를 탐색하기 위한 2가지 알고리즘.
+    - 기본 자료구조 스택과 큐를 이해하고 있어야 한다.
+    - 재귀함수를 알고 있어야 한다.
+    - 그래프의 표현 방식에 대해서 알고 있어야 한다.
+    - 노드 / 간선 / vertex
+    - 그래프의 표현 방식에는 2가지가 존재. 인접행렬과 인접리스트
+    - '인접하다'라는 뜻은 간선으로 연결되어 있다는 뜻
+    - BFS는 가까운 거리부터 탐색하는 알고리즘 > 큐를 이용한다.
+    - DFS는 멀리 있는 노드부터 확인하는 알고리즘 > 스택을 이용한다.
 
-    2. 상수값 오퍼랜드
+  ```python
+  def dfs(graph, v, visited):
+  visited[v] = True
+  print(v, end=' ')
+  for i in graph[v]:
+    if not visited[i]:
+      dfs(graph, i, visited)
 
-    3. 메모리 오퍼랜드
+graph = [
+  [],
+  [2,3,8],
+  [1,7],
+  [1,4,5],
+  [3,5],
+  [3,4],
+  [7],
+  [2,6,8],
+  [1,7]
+]
+
+visited = [False] * 9
+
+# dfs(graph, 1, visited)
+
+from collections import deque
+
+def bfs(graph, start, visited):
+
+  queue = deque([start])
+  visited[start] = True
+
+  while queue:
+    v = queue.popleft()
+    print(v)
+    for i in graph[v]:
+      if not visited[i]:
+        visited[i] = True
+        queue.append(i)
+
+bfs(graph, 1, visited)
+  ```
 
