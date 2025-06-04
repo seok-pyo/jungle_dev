@@ -198,4 +198,25 @@ Multiplication 재귀
 ### 유니온 파인드
 - 서로 다른 노드가 같은 집합(트리)에 속하는지 빠르게 판별하고, 합치기 위한 자료구조
 
+```python
+def find(parent, x):
+    if parent[x] != x:
+        parent[x] = find(parent, parent[x])
+    return parent[x]
 
+def union(parent, a, b):
+    root_a = find(parent, a)
+    root_b = find(parent, b)
+
+    if root_a != root_b:
+        parent[root_b] = root_a
+```
+
+- 유니온 파인드 자료구조는 서로소 집합(Disjoint set)을 관리하는데 사용되며, 특히 그래프에서 사이클을 감지하거나 집합을 병합하는데 유용
+
+- 서로소 집합 : 공통 원소가 없는 두 집합
+
+- 스택과 큐가  push와 pop 연산으로 이루어져 있는 자료구조 인 것처럼, 서로소 집합 자료구조도 union과 find 연산으로 구현된다.
+
+### 최단 경로 알고리즘
+- 플로이드 와샬, 데이크 스트라 알고리즘
