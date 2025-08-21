@@ -1,6 +1,6 @@
 # Summary
 
-- [소개](README.md)
+- [블로그 확인](README.md)
 - [Krafton Jungle 9th](chapter1/README.md)
   - [Week 01](krafton-jungle/WEEK01.md)
   - [Week 02](krafton-jungle/WEEK02.md)
