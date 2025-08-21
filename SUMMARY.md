@@ -1,6 +1,6 @@
 # Summary
 
-- [블로그 확인](/README.md)
+- [블로그 확인](README.md)
 - [Krafton Jungle 9th](krafton-jungle/README.md)
   - [Week 01](krafton-jungle/week01/README.md)
     - [w1](krafton-jungle/week01/WEEK01.md)
