@@ -1,3 +1,3 @@
 # Intro
 
-This is main page.
+This is pano.
